@@ -1,5 +1,3 @@
-/* Chaskayni · lógica del front-end (prototipo semana 8). Datos de ejemplo en memoria + localStorage.
-   Seguridad: todo texto del usuario se inserta con textContent (previene XSS). */
 const $ = (s) => document.querySelector(s);
 const el = (tag, props = {}, ...hijos) => { const n = document.createElement(tag); Object.assign(n, props); hijos.forEach(h => n.append(h)); return n; };
 
